@@ -2,9 +2,9 @@ package auth
 
 import (
 	"encoding/json"
-	"github.com/ProjectReferral/Get-me-in/auth-api/configs"
-	"github.com/ProjectReferral/Get-me-in/auth-api/models"
-	"github.com/ProjectReferral/Get-me-in/pkg/security"
+	"gitlab.com/projectreferral/auth-api/configs"
+	"gitlab.com/projectreferral/auth-api/models"
+	"gitlab.com/projectreferral/util/pkg/security"
 	"io"
 	"log"
 	"time"

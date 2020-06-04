@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/ProjectReferral/Get-me-in/auth-api/configs"
-	"github.com/ProjectReferral/Get-me-in/auth-api/internal"
+	"gitlab.com/projectreferral/auth-api/configs"
+	"gitlab.com/projectreferral/auth-api/internal"
 	"log"
 )
 

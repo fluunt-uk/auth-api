@@ -3,8 +3,8 @@ package auth
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/ProjectReferral/Get-me-in/auth-api/configs"
-	request "github.com/ProjectReferral/Get-me-in/pkg/http_lib"
+	"gitlab.com/projectreferral/auth-api/configs"
+	request "gitlab.com/projectreferral/util/pkg/http_lib"
 	"io/ioutil"
 	"net/http"
 )

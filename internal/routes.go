@@ -1,8 +1,8 @@
 package internal
 
 import (
-	"github.com/ProjectReferral/Get-me-in/auth-api/configs"
-	"github.com/ProjectReferral/Get-me-in/auth-api/internal/api/auth"
+	"gitlab.com/projectreferral/auth-api/configs"
+	"gitlab.com/projectreferral/auth-api/internal/api/auth"
 	"github.com/gorilla/mux"
 	"log"
 	"net/http"
