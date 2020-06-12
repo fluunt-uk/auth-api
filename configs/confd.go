@@ -10,6 +10,8 @@ const (
 	/*************** API ENDPOINTS **************/
 	LOGIN_ENDPOINT = "http://localhost:5001/account/signin"
 	//LOGIN_ENDPOINT = "http://localhost:5000/mock"
+	RECAPTCHA_VERIFY = "https://www.google.com/recaptcha/api/siteverify"
+	RECAPTCHA_SECRET = "6LcbrKIZAAAAACoS7IHx5KZfhkk3T1tXBhcIGf6W"
 	/*********************************************/
 
 	/*********** Authentication configs **********/
