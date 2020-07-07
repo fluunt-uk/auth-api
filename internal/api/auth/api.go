@@ -20,7 +20,6 @@ func VerifyCredentials(w http.ResponseWriter, req *http.Request) {
 	if (*req).Method == "OPTIONS" {
 		return
 	}
-
 	r := &models.ReCaptcha{}
 
 	s := req.Header.Get("g-recaptcha-response")

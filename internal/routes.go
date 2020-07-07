@@ -6,6 +6,7 @@ import (
 	"github.com/rs/cors"
 	"gitlab.com/projectreferral/auth-api/configs"
 	"gitlab.com/projectreferral/auth-api/internal/api/auth"
+	"gitlab.com/projectreferral/util/pkg/security"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -15,8 +16,8 @@ import (
 func SetupEndpoints() {
 	_router := mux.NewRouter()
 
-	_router.HandleFunc("/auth", auth.VerifyCredentials).Methods("POST", "OPTIONS")
-	_router.HandleFunc("/auth/temp", auth.IssueRegistrationTempToken).Methods("GET")
+	_router.HandleFunc("/auth", security.WrapHandlerWithSpecialAuth(auth.VerifyCredentials, "")).Methods("POST", "OPTIONS")
+	_router.HandleFunc("/auth/temp", security.WrapHandlerWithSpecialAuth(auth.IssueRegistrationTempToken, "")).Methods("GET")
 	//test response that can be used for testing the internal/responses
 	_router.HandleFunc("/mock", auth.MockResponse).Methods("GET")
 
